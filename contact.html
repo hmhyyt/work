@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 设置页面标题 -->
+	<title>Contact</title>
+	
+	<!-- 设置页面文字编码 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- 设置edge兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- 设置页面适配属性 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- 引入主页样式布局css -->
+	<link rel="stylesheet" href="./css/index_new.css">
+	
+	<!-- 引入Bootstrap 框架css -->
+	<link href="https://www.w3school.com.cn/lib/bs/bootstrap.css" rel="stylesheet">
+	<script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>	
+</head>
+
+<body>
+<!-- 导航区域开始 -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<div class="container-fluid">
+		<!-- 添加网站主题或Logo -->
+		<h1><a class="navbar-brand" href="./index.html">Personalized story</a></h1>
+
+		<!--添加导航按钮，当页面宽度较小时，导航自动隐藏，点击按钮显示竖版导航 -->
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!--添加导航链接，默认主页为当前活动页面 -->
+		<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="./animal.html">Animal</a></li>
+				<li class="nav-item active"><a class="nav-link" href="./contact.html">Contact</a></li>
+			</ul>
+		</div>
+  </div>
+</nav>
+<!-- //导航区域结束 -->
+	
+<!-- 使用Bootstrap 的响应式的固定宽度容器作为内容主容器 -->
+<div class="container-fluid home-page">
+	<!-- 留言区域 -->	
+	<div class="row d-flex justify-content-start mt-3">
+		<div class="col-sm-6">
+			<h3 class="text-white">关于我们</h3>
+			<p class="text-white mt-3">我们是一个专门收集个性化故事的网站，如果您有好的故事，请告诉我们，您对我们的网站有任何建议，也可以给我们留言。</p>
+			<p class="text-white mt-3">联系方式：XXX@123.com</p>
+		</div>
+		<div class="col-sm-6">
+			<h3 class="text-white">欢迎留言</h3>
+			<div class="container bg-light rounded">
+				<table class="table mt-4 mb-5">
+					<tr>
+						<td>
+							<form action="">
+								<div class="mb-3 mt-3">
+									<label for="email">电子邮件：</label>
+									<input type="email" class="form-control" id="email" placeholder="请输入电子邮件地址" name="email">
+								</div>
+
+								<div class="mb-3">
+									<label for="comment">您的留言：</label>
+									<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+								</div>
+
+								<div class="btn float-end">
+									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">提交</button>
+									<button type="reset" class="btn btn-primary">重置</button>
+								</div>
+							</form>	
+						</td>
+					</tr>
+				</table>
+			</div>				
+		</div>
+	</div>
+	<!-- //留言区域结束 -->
+	<!-- 提交成功提示框 -->
+	<div class="modal fade" id="myModal">
+	  <div class="modal-dialog modal-sm modal-dialog-centered">
+		<div class="modal-content">
+
+		  <!-- 模态标题 -->
+		  <div class="modal-header">
+			<h4 class="modal-title">提交成功</h4>
+			<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		  </div>
+
+		  <!-- 模态主体 
+		  <div class="modal-body">感谢您的留言！</div>
+			-->
+		  <!-- 模态页脚 -->
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+		  </div>
+
+		</div>
+	  </div>
+	</div>
+	<!-- 提交成功提示框结束 -->
+</div>
+<!-- //主容器结束 -->
+
+
+
+<!-- 页脚版权信息区域 -->	
+<footer class="bg-dark text-white text-md-center pt-4 pb-3">
+	<p>Copyright © 2022. Company name All rights reserved. <a href="#">网站信息</a></p>
+</footer>	
+<!-- //页脚版权信息区域结束 -->
+</body>	
+</html>
