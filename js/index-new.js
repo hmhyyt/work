@@ -1,14 +1,10 @@
 import data from "./data.js";
 //创建dom
 const doms = {
-    //paragraphHeader: null,
-    //paragraphP: null,
+    imghHeader: null,
     image: null,
-    //footer: null,
     beforeBtn: null,
     nextBtn: null,
-    //checkBox:null,
-    //audio:null,
 }
 // 初始化page值
 let page = 1
@@ -21,16 +17,11 @@ window.onload = function () {
 }
 //获取dom节点
 function getDoms() {
-    //doms.paragraphHeader = document.getElementById('paragraph-header-text')
-    //doms.paragraphP = document.getElementById('paragraph-p-text')
-    //doms.paragraph = document.getElementById('paragraph')
+    doms.imgHeader = document.getElementById('imgHeader')
     doms.image = document.getElementById('image')
     doms.imageBox = document.getElementById('img-box')
-    //doms.footer = document.getElementById('footer-text')
     doms.beforeBtn = document.getElementById('before-btn')
     doms.nextBtn = document.getElementById('next-btn')
-    //doms.checkBox = document.getElementById('check-me')
-    //doms.audio =  document.getElementById('audio')
 }
 //重置动画
 function setAnimista() {
@@ -64,15 +55,6 @@ function watchBtn() {
         setPageData(page)
         setAnimista()
     }
-   // doms.checkBox.onclick = function(){
-        //play = !play
-        // 控制音乐播放
-        //if(play){
-           // doms.audio.play()
-        //}else{
-            //doms.audio.pause()
-        //}
-    //}
 }
 //渲染页面数据
 function setPageData(page) {
@@ -82,12 +64,8 @@ function setPageData(page) {
             //设置按钮显示隐藏
             doms.beforeBtn.setAttribute('style', 'display:none')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
-            //设置头部文本
-            //doms.header.innerHTML = data.pageOne.header
-            //设置文章标题文本
-            //doms.paragraphHeader.innerHTML = data.pageOne.contentBlack
-            //设置文章内容文本
-            //doms.paragraphP.innerHTML = data.pageOne.content
+            //设置图片标题文本
+            doms.imgHeader.innerHTML = data.pageOne.contentBlack
             //先移除图片src防止缓存
             doms.image.removeAttribute('src')
             //设置图片路径
@@ -100,35 +78,26 @@ function setPageData(page) {
         case 2:
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
-            //doms.header.innerHTML = ''
-            //doms.paragraphHeader.innerHTML = data.pageTwo.contentBlack
-            //doms.paragraphP.innerHTML = data.pageTwo.content
+            doms.imgHeader.innerHTML = data.pageTwo.contentBlack
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageTwo.ImageUrl)
             doms.image.setAttribute('alt', 'page2')
-            //doms.footer.innerHTML = data.pageTwo.footer
             break;
         case 3:
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
-            //doms.header.innerHTML = ''
-            //doms.paragraphHeader.innerHTML = data.pageThree.contentBlack
-            //doms.paragraphP.innerHTML = data.pageThree.content
+            doms.imgHeader.innerHTML = data.pageThree.contentBlack
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageThree.ImageUrl)
             doms.image.setAttribute('alt', 'page3')
-            //doms.footer.innerHTML = data.pageThree.footer
             break;
         case 4:
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:none')
-            //doms.header.innerHTML = ''
-            //doms.paragraphHeader.innerHTML = data.pageFour.contentBlack
-            //doms.paragraphP.innerHTML = data.pageFour.content
+            doms.imgHeader.innerHTML = data.pageFour.contentBlack
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageFour.ImageUrl)
             doms.image.setAttribute('alt', 'page4')
-            //doms.footer.innerHTML = data.pageFour.footer
             break;
         default:
             break;
