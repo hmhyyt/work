@@ -10,13 +10,13 @@
 	<!-- 设置页面适配属性 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<!-- 引入主页样式布局css -->
-	<link rel="stylesheet" href="./css/index_new.css">
+	<link rel="stylesheet" href="./css/index_new.css" />
 	<!-- 引入字体css -->
 	<link rel="stylesheet" href="./css/iconfont.css" />
 	<!-- 引入动画样式库 -->
 	<link rel="stylesheet" href="./css/animista.css" />
 	<!-- 引入Bootstrap 框架css -->
-	<link href="https://www.w3school.com.cn/lib/bs/bootstrap.css" rel="stylesheet">
+	<link href="https://www.w3school.com.cn/lib/bs/bootstrap.css" rel="stylesheet" />
 	<script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
 	
 </head>
@@ -26,7 +26,7 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 	<div class="container-fluid">
 		<!-- 添加网站主题或Logo -->
-		<h1><a class="navbar-brand" href="./index.html">Personalized story</a></h1>
+		<h2><a class="navbar-brand" href="./index.html">Personalized story</a></h2>
 
 		<!--添加导航按钮，当页面宽度较小时，导航自动隐藏，点击按钮显示竖版导航 -->
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -47,29 +47,24 @@
 	
 <!-- 中部内容区域：使用Bootstrap 的响应式的固定宽度容器作为内容主容器 -->
 <div class="container-fluid home-page">
-	<!-- 标题 -->
-	<div class="header">
-		<span id="header-text" class="slide-bottom"></span>
-	</div>
-	<!-- //标题结束 -->
 	<!-- 图片展示区域：这里采用flex弹性布局实现左右自适应 -->
-	<div class="content">
+	<div class="row content">
 		<!-- 左边段落 -->
-		<div class="paragraph slide-right" id="paragraph">
+		<div class="col-sm-6 paragraph slide-right" id="paragraph">
 			<!-- 头部黑色文字 -->
 			<span id="paragraph-header-text"></span>
 			<!-- 白色文字段落 -->
 			<p id="paragraph-p-text"></p>
 		</div>
 		<!-- 右边图片 -->
-		<div class="img-box slide-left" id="img-box">
+		<div class="col-sm-6 img-box slide-left" id="img-box">
 			<img id="image" class="img" src="./static/img-1.png" alt="" />
 		</div>
 	</div>
-	
 	<!-- //图片展示区域结束 -->
+	
 	<!-- 底部按钮区域 -->
-	<div class="btn">
+	<div class="btn d-flex justify-content-center">
 		<button class="before" id="before-btn">
 			<i class="iconfont icon-jiantou_xiangzuo_o"></i>
 			<span>Before</span>
