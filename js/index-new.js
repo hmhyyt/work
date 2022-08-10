@@ -19,7 +19,7 @@ window.onload = function () {
 function getDoms() {
     doms.imgHeader = document.getElementById('imgHeader')
     doms.image = document.getElementById('image')
-    doms.imageBox = document.getElementById('img-box')
+    //doms.imageBox = document.getElementById('img-box')
     doms.beforeBtn = document.getElementById('before-btn')
     doms.nextBtn = document.getElementById('next-btn')
 }
@@ -34,7 +34,7 @@ function setAnimista() {
     //重置元素宽度，只有这样才能重新激活动画
     //void doms.header.offsetWidth;
     //void doms.paragraph.offsetWidth;
-    void doms.imageBox.offsetWidth;
+    //void doms.imageBox.offsetWidth;
     //void doms.footer.offsetWidth;
     
     //将动画的类重新附上
