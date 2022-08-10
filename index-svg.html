@@ -10,7 +10,11 @@
 	<!-- 设置页面适配属性 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<!-- 引入主页样式布局css -->
-	<link rel="stylesheet" href="./css/index_new.css">	
+	<link rel="stylesheet" href="./css/index_new.css">
+	<!-- 引入字体css -->
+	<link rel="stylesheet" href="./css/iconfont.css" />
+	<!-- 引入动画样式库 -->
+	<link rel="stylesheet" href="./css/animista.css" />
 	<!-- 引入Bootstrap 框架css -->
 	<link href="https://www.w3school.com.cn/lib/bs/bootstrap.css" rel="stylesheet">
 	<script src="https://www.w3school.com.cn/lib/bs/bootstrap.js"></script>
@@ -47,45 +51,42 @@
 	<!-- 图片轮播区域 -->
 	
 	<!-- 标题 -->
-	<!--
-    <div class="header">
-      <span id="header-text" class="slide-bottom"></span>
-    </div>
+	<div class="header">
+		<span id="header-text" class="slide-bottom"></span>
+	</div>
 	<!-- 标题结束 -->
 	
 	<!-- 图片展示区域：这里采用flex弹性布局实现左右自适应 -->
-    <div class="content">
-      <!-- 左边段落 -->
-      <div class="paragraph slide-right" id="paragraph">
-        <!-- 头部黑色文字 -->
-        <span id="paragraph-header-text"></span>
-        <!-- 白色文字段落 -->
-        <p id="paragraph-p-text"></p>
-      </div>
-      <!-- 右边图片 -->
-      <div class="img-box slide-left" id="img-box">
-        <img id="image" class="img" src="./static/img-1.png" alt="" />
-      </div>
-    </div>
+	<div class="content">
+		<!-- 左边段落 -->
+		<div class="paragraph slide-right" id="paragraph">
+			<!-- 头部黑色文字 -->
+			<span id="paragraph-header-text"></span>
+			<!-- 白色文字段落 -->
+			<p id="paragraph-p-text"></p>
+		</div>
+		<!-- 右边图片 -->
+		<div class="img-box slide-left" id="img-box">
+			<img id="image" class="img" src="./static/img-1.png" alt="" />
+		</div>
+	</div>
 	<!-- //图片展示区域结束 -->
 	
 	<!-- 尾部文字 -->
-   <!-- <div class="footer slide-top" id="footer-text"></div>
+   	<div class="footer slide-top" id="footer-text"></div>
 	<!-- //尾部文字结束 -->
 	
 	<!-- 底部按钮区域 -->
-    <div class="btn">
-     
-      <button class="before" id="before-btn">
-        <i class="iconfont icon-jiantou_xiangzuo_o"></i>
-        <span>Before</span>
-      </button>
-     
-      <button class="next" id="next-btn">
-        <span>Next</span>
-        <i class="iconfont icon-jiantou_xiangyou_o"></i>
-      </button>
-    </div>
+	<div class="btn">
+		<button class="before" id="before-btn">
+			<i class="iconfont icon-jiantou_xiangzuo_o"></i>
+			<span>Before</span>
+		</button>
+		<button class="next" id="next-btn">
+			<span>Next</span>
+			<i class="iconfont icon-jiantou_xiangyou_o"></i>
+		</button>
+	</div>
 		
 	<!-- //轮播区域结束 -->
 </div>
