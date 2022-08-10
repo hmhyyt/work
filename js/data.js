@@ -1,7 +1,6 @@
 // 页面数据
 const data = {
     pageOne: {
-        header:"Personalized story",
         contentBlack:'The hedgehog mother and son',
         content:"Mother and baby hedgehongs lie peacefully in their master's hands. Baby hedgehogs feel safe lying next to their mother  and are in harmony  with their master.",
         ImageUrl:"./static/img-1.png",
