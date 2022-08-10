@@ -103,6 +103,19 @@ li{
 /* 导航栏样式结束 */
 
 /* 图文轮播区域样式 */
+.imgTit{
+	/* 设置字体 */
+	font-family: 'SourceHanSansSC-regular';
+	/* 设置文字大小 */
+	font-size: 50px;
+	/* 设置文字颜色 */
+	 color:#fff;
+	/* 设置文字加粗 */
+	font-weight: bolder;
+	/* 设置文字阴影 */
+	text-shadow: 2px 2px 2px #fff; 
+	display: block;
+}
 /* 图文轮播区域样式结束 */
 
 /* 底部按钮样式 */
