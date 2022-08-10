@@ -37,7 +37,7 @@ function setAnimista() {
     //先去除元素中动画的class
     //doms.header.classList.remove('slide-bottom')
     //doms.paragraph.classList.remove('slide-right')
-    doms.imageBox.classList.remove('slide-left')
+    //doms.imageBox.classList.remove('slide-left')
     //doms.footer.classList.remove('slide-top')
     
     //重置元素宽度，只有这样才能重新激活动画
@@ -49,7 +49,7 @@ function setAnimista() {
     //将动画的类重新附上
     //doms.header.classList.add("slide-bottom");
     //doms.paragraph.classList.add("slide-right");
-    doms.imageBox.classList.add("slide-left");
+    //doms.imageBox.classList.add("slide-left");
     //doms.footer.classList.add("slide-top");
 }
 //监听按钮事件
