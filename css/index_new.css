@@ -3,7 +3,7 @@
 @font-face {
     /* 声明字体 */
     font-family: 'SourceHanSansSC-regular';
-    src: url('./font/sourcehansanssc-regular.ttf');
+    src: url('../font/sourcehansanssc-regular.ttf');
 }
 
 html,body，p,li{
@@ -28,7 +28,6 @@ li{
 	/* 不显示列表前的标记*/
 	list-style:none;
 }
-
 
 /* 设置主容器样式*/
 .home-page {
@@ -103,6 +102,7 @@ li{
     background: none;
 }
 /* 导航栏样式结束 */
+
 
 /* 图文轮播区域样式 */
 .content {
@@ -185,7 +185,6 @@ p {
     font-weight: bold;
 }
 /* 底部按钮样式结束 */
-
 
 /* 设置页脚样式 */
 footer,footer a{
