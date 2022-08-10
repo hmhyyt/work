@@ -186,6 +186,28 @@ p {
 }
 /* 底部按钮样式结束 */
 
+/* 划入动画样式 */
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* 从左到右划入动画 */
+.slide-right {
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* 从右到左划入动画 */
+.slide-left {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* 从下到上划入动画 */
+.slide-top {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* 划入动画样式结束 */
+
 /* 设置页脚样式 */
 footer,footer a{
 	color: #fff;
