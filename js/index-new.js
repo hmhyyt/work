@@ -1,7 +1,7 @@
 import data from "./data.js";
 //创建dom
 const doms = {
-    imghHeader: null,
+    imgHeader: null,
     image: null,
     beforeBtn: null,
     nextBtn: null,
