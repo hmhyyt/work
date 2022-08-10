@@ -104,6 +104,46 @@ li{
 }
 /* 导航栏样式结束 */
 
+/* 图文轮播区域样式 */
+.content {
+    /* flex弹性布局 */
+    display: flex;
+    padding-top: 40px;
+    min-height: 600px;
+}
+
+.content .paragraph {
+
+    font-size: 32px;
+}
+
+.content .img-box {
+
+    font-size: 32px;
+}
+
+.content .paragraph,
+.img-box {
+    /* 左右各50%弹性布局 */
+    flex:50% 1 1;
+    text-align: center;
+}
+
+.content .img-box .img {
+    max-height: 560px;
+}
+
+.content .paragraph span,
+p {
+    line-height: 60px;
+}
+
+.content .paragraph p {
+    color: #fff;
+}
+
+/* 图文轮播区域样式结束 */
+
 
 /* 设置页脚样式 */
 footer,footer a{
