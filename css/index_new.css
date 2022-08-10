@@ -144,6 +144,48 @@ p {
 
 /* 图文轮播区域样式结束 */
 
+/* 底部按钮样式 */
+.btn {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.btn .before {
+    display: none;
+}
+
+.btn button {
+    width: 145px;
+    height: 58px;
+    border: none;
+    background-color: #A4ADB3;
+    color: #fff;
+    /* 鼠标悬停效果 */
+    cursor: pointer;
+    /* 元素圆角 */
+    border-radius: 4px;
+
+}
+
+.btn button:hover {
+    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.btn button:last-child {
+    margin-left: 20px;
+}
+
+.btn button span,
+.iconfont {
+    font-size: 24px !important;
+}
+
+.btn button .iconfont {
+    font-weight: bold;
+}
+/* 底部按钮样式结束 */
+
 
 /* 设置页脚样式 */
 footer,footer a{
