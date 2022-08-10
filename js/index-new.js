@@ -1,8 +1,8 @@
 import data from "./data.js";
 //创建dom
 const doms = {
-    paragraphHeader: null,
-    paragraphP: null,
+    //paragraphHeader: null,
+    //paragraphP: null,
     image: null,
     //footer: null,
     beforeBtn: null,
@@ -21,9 +21,9 @@ window.onload = function () {
 }
 //获取dom节点
 function getDoms() {
-    doms.paragraphHeader = document.getElementById('paragraph-header-text')
-    doms.paragraphP = document.getElementById('paragraph-p-text')
-    doms.paragraph = document.getElementById('paragraph')
+    //doms.paragraphHeader = document.getElementById('paragraph-header-text')
+    //doms.paragraphP = document.getElementById('paragraph-p-text')
+    //doms.paragraph = document.getElementById('paragraph')
     doms.image = document.getElementById('image')
     doms.imageBox = document.getElementById('img-box')
     //doms.footer = document.getElementById('footer-text')
@@ -36,19 +36,19 @@ function getDoms() {
 function setAnimista() {
     //先去除元素中动画的class
     //doms.header.classList.remove('slide-bottom')
-    doms.paragraph.classList.remove('slide-right')
+    //doms.paragraph.classList.remove('slide-right')
     doms.imageBox.classList.remove('slide-left')
     //doms.footer.classList.remove('slide-top')
     
     //重置元素宽度，只有这样才能重新激活动画
     //void doms.header.offsetWidth;
-    void doms.paragraph.offsetWidth;
+    //void doms.paragraph.offsetWidth;
     void doms.imageBox.offsetWidth;
     //void doms.footer.offsetWidth;
     
     //将动画的类重新附上
     //doms.header.classList.add("slide-bottom");
-    doms.paragraph.classList.add("slide-right");
+    //doms.paragraph.classList.add("slide-right");
     doms.imageBox.classList.add("slide-left");
     //doms.footer.classList.add("slide-top");
 }
@@ -84,10 +84,10 @@ function setPageData(page) {
             doms.nextBtn.setAttribute('style', 'display:inline-block')
             //设置头部文本
             //doms.header.innerHTML = data.pageOne.header
-            设置文章标题文本
-            doms.paragraphHeader.innerHTML = data.pageOne.contentBlack
+            //设置文章标题文本
+            //doms.paragraphHeader.innerHTML = data.pageOne.contentBlack
             //设置文章内容文本
-            doms.paragraphP.innerHTML = data.pageOne.content
+            //doms.paragraphP.innerHTML = data.pageOne.content
             //先移除图片src防止缓存
             doms.image.removeAttribute('src')
             //设置图片路径
@@ -101,8 +101,8 @@ function setPageData(page) {
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
             //doms.header.innerHTML = ''
-            doms.paragraphHeader.innerHTML = data.pageTwo.contentBlack
-            doms.paragraphP.innerHTML = data.pageTwo.content
+            //doms.paragraphHeader.innerHTML = data.pageTwo.contentBlack
+            //doms.paragraphP.innerHTML = data.pageTwo.content
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageTwo.ImageUrl)
             doms.image.setAttribute('alt', 'page2')
@@ -112,8 +112,8 @@ function setPageData(page) {
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
             //doms.header.innerHTML = ''
-            doms.paragraphHeader.innerHTML = data.pageThree.contentBlack
-            doms.paragraphP.innerHTML = data.pageThree.content
+            //doms.paragraphHeader.innerHTML = data.pageThree.contentBlack
+            //doms.paragraphP.innerHTML = data.pageThree.content
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageThree.ImageUrl)
             doms.image.setAttribute('alt', 'page3')
@@ -123,8 +123,8 @@ function setPageData(page) {
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:none')
             //doms.header.innerHTML = ''
-            doms.paragraphHeader.innerHTML = data.pageFour.contentBlack
-            doms.paragraphP.innerHTML = data.pageFour.content
+            //doms.paragraphHeader.innerHTML = data.pageFour.contentBlack
+            //doms.paragraphP.innerHTML = data.pageFour.content
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageFour.ImageUrl)
             doms.image.setAttribute('alt', 'page4')
