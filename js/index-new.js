@@ -1,6 +1,7 @@
 import data from "./data.js";
 //创建dom
 const doms = {
+    paragraphHeader: null,
     paragraphP: null,
     image: null,
     //footer: null,
@@ -12,9 +13,6 @@ const doms = {
 // 初始化page值
 let page = 1
 
-// 初始化音乐播放状态
-//let play = false
-
 //当页面加载完毕
 window.onload = function () {
     getDoms()
@@ -23,6 +21,7 @@ window.onload = function () {
 }
 //获取dom节点
 function getDoms() {
+    doms.paragraphHeader = document.getElementById('paragraph-header-text')
     doms.paragraphP = document.getElementById('paragraph-p-text')
     doms.paragraph = document.getElementById('paragraph')
     doms.image = document.getElementById('image')
@@ -85,8 +84,8 @@ function setPageData(page) {
             doms.nextBtn.setAttribute('style', 'display:inline-block')
             //设置头部文本
             //doms.header.innerHTML = data.pageOne.header
-            //设置文章标题文本
-            //doms.paragraphHeader.innerHTML = data.pageOne.contentBlack
+            设置文章标题文本
+            doms.paragraphHeader.innerHTML = data.pageOne.contentBlack
             //设置文章内容文本
             doms.paragraphP.innerHTML = data.pageOne.content
             //先移除图片src防止缓存
@@ -102,7 +101,7 @@ function setPageData(page) {
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
             //doms.header.innerHTML = ''
-            //doms.paragraphHeader.innerHTML = data.pageTwo.contentBlack
+            doms.paragraphHeader.innerHTML = data.pageTwo.contentBlack
             doms.paragraphP.innerHTML = data.pageTwo.content
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageTwo.ImageUrl)
@@ -113,7 +112,7 @@ function setPageData(page) {
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:inline-block')
             //doms.header.innerHTML = ''
-            //doms.paragraphHeader.innerHTML = data.pageThree.contentBlack
+            doms.paragraphHeader.innerHTML = data.pageThree.contentBlack
             doms.paragraphP.innerHTML = data.pageThree.content
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageThree.ImageUrl)
@@ -124,7 +123,7 @@ function setPageData(page) {
             doms.beforeBtn.setAttribute('style', 'display:inline-block')
             doms.nextBtn.setAttribute('style', 'display:none')
             //doms.header.innerHTML = ''
-            //doms.paragraphHeader.innerHTML = data.pageFour.contentBlack
+            doms.paragraphHeader.innerHTML = data.pageFour.contentBlack
             doms.paragraphP.innerHTML = data.pageFour.content
             doms.image.removeAttribute('src')
             doms.image.setAttribute('src', data.pageFour.ImageUrl)
